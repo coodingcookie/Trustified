@@ -1,0 +1,319 @@
+/* Default light mode styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(199, 211, 234);
+    font-family: Arial, sans-serif;
+    color: #000;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: rgb(42, 21, 67);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: red;
+}
+
+.search-results {
+    display: none;
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.search-results ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.search-results li:hover {
+    background-color: #f0f0f0;
+}
+
+.search-results li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    .search-results {
+        width: 90%;
+    }
+}
+
+.custom-text {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 25px;
+    align-items: baseline;
+    color: white;
+}
+
+.custom-text1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20px;
+    align-items: baseline;
+    color: white;
+}
+
+main {
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.video-library {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.video-library video {
+    width: 600px;
+    height: 350px;
+}
+
+.box {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(10, 8, 8, 0.3);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.box:hover {
+    background: #fdfafa;
+    width: 500px;
+}
+
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: width 0.4s ease, opacity 0.4s ease;
+    flex: 1;
+    opacity: 0;
+}
+
+.box:hover input {
+    width: 300px;
+    opacity: 1;
+}
+
+.box a .fas {
+    color: #1daf;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.box:hover a .fas {
+    color: #333;
+}
+
+.details-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+}
+.logo {
+    height: 65px; /* Adjust the height as needed */
+    width: 65px;
+    margin-right: 20px; /* Space between logo and nav items */
+    vertical-align: middle; /* Aligns the logo with the text */
+}
+
+
+#medicineName {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#medicineComponents {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#backButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#backButton:hover {
+    background-color: #0056b3;
+}
+
+.side-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.side-video {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.side-video video {
+    width: 600px;
+    height: auto;
+}
+
+.drug-discovery {
+    flex: 2;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.drug-discovery h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(55, 35, 120);
+}
+
+.drug-discovery ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drug-discovery li {
+    margin-bottom: 20px;
+}
+
+.drug-discovery .medicine-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.drug-discovery .medicine-link:hover {
+    text-decoration: underline;
+}
+
+.drug-discovery p {
+    margin: 5px 0;
+}
+
+body.dark-mode {
+    background: #333;
+    color: #ddd;
+}
+
+body.dark-mode .navbar {
+    background-color: #222;
+}
+
+body.dark-mode .box {
+    background: #444;
+}
+
+body.dark-mode .video-library video {
+    border: 1px solid #444;
+}
+
+body.dark-mode .details-container {
+    border-color: #555;
+}
+
+body.dark-mode .box input {
+    color: #ddd;
+}
+
+body.dark-mode .box a .fas {
+    color: #ddd;
+}
+
+body.dark-mode #backButton {
+    background-color: #0056b3;
+}
+
+.theme-toggle-btn {
+    background-color: rgb(6, 6, 6);
+    border: 10px solid rgb(246, 244, 244);
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    color: darkblue;
+}
+
+p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    color: black;
+}
